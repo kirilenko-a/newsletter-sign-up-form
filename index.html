@@ -17,7 +17,63 @@
     />
     <title>Newsletter sign up</title>
   </head>
-  <body>
+  <body class="font-main h-screen">
+    <main class="flex flex-col gap-10">
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="./public/images/illustration-sign-up-tablet.svg"
+        />
+        <source
+          media="(min-width:1440px)"
+          srcset="./public/images/illustration-sign-up-desktop.svg"
+        />
+        <img
+          src="./public/images/illustration-sign-up-mobile.svg"
+          alt="Dashboard illustration"
+        />
+      </picture>
+
+      <div class="flex flex-col gap-10 px-6 text-blue-800">
+        <div class="flex flex-col justify-start gap-6">
+          <h1 class="text-[40px] font-bold">Stay updated!</h1>
+
+          <p class="">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+
+          <ul class="flex flex-col gap-2 leading-[150%]">
+            <li class="list-icon">
+              Product discovery and building what matters
+            </li>
+
+            <li class="list-icon">Measuring to ensure updates are a success</li>
+
+            <li class="list-icon">And much more!</li>
+          </ul>
+        </div>
+
+        <form class="flex flex-col gap-6" method="" action="">
+          <div class="flex flex-col gap-4">
+            <label class="text-[12px]" for="email">Email address</label>
+
+            <input
+              type="email"
+              placeholder="email@company.com"
+              id="email"
+              class="border px-6 py-4 rounded-lg border-grey"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="bg-blue-800 py-4 font-bold text-white rounded-lg cursor-pointer"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
