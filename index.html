@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/src/assets/images/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Newsletter sign up</title>
+    <script type="module" crossorigin src="/newsletter-signup-form/assets/index-MJ7sEqYd.js"></script>
+    <link rel="stylesheet" crossorigin href="/newsletter-signup-form/assets/index-CdqwIcAS.css">
+  </head>
+  <body
+    class="font-main min-h-screen bg-blue-700 md:flex md:items-center justify-center"
+  >
+    <main
+      class="flex flex-col items-center gap-10 bg-white md:py-10.75 md:px-10 min-h-screen md:rounded-[36px] xl:flex-row-reverse xl:py-6 xl:px-8 md:min-h-0 xl:gap-16"
+    >
+      <picture class="w-full xl:w-1/2">
+        <source
+          media="(min-width:1280px)"
+          srcset="/newsletter-signup-form/images/illustration-sign-up-desktop.svg"
+        />
+
+        <source
+          media="(min-width:768px)"
+          srcset="/newsletter-signup-form/images/illustration-sign-up-tablet.svg"
+        />
+
+        <img
+          class="w-full"
+          src="/newsletter-signup-form/images/illustration-sign-up-mobile.svg"
+          alt="Dashboard illustration"
+        />
+      </picture>
+
+      <div
+        class="flex flex-col gap-10 px-6 text-blue-800 md:p-0 w-full xl:gap-8 xl:w-1/2"
+      >
+        <div class="flex flex-col justify-start gap-6 xl:gap-8">
+          <h1 class="text-[40px] font-bold xl:text-[56px] md:leading-[100%]">
+            Stay updated!
+          </h1>
+
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+          <ul class="flex flex-col gap-2 leading-[150%]">
+            <li class="list-icon">
+              Product discovery and building what matters
+            </li>
+
+            <li class="list-icon">Measuring to ensure updates are a success</li>
+
+            <li class="list-icon">And much more!</li>
+          </ul>
+        </div>
+
+        <form
+          class="flex flex-col gap-6"
+          method="GET"
+          action="/"
+          id="form"
+          novalidate
+        >
+          <div class="flex flex-col gap-2">
+            <div class="flex justify-between items-center">
+              <label class="text-[12px]" for="email">Email address</label>
+              <p id="error-message" class="text-[12px] text-red"></p>
+            </div>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="email@company.com"
+              id="email"
+              class="border px-6 py-4 rounded-lg border-grey outline-blue-800"
+              aria-live="polite"
+            />
+          </div>
+
+          <button
+            type="submit"
+            id="submit-btn"
+            class="bg-blue-800 py-4 font-bold text-white rounded-lg cursor-pointer active:bg-gradient hover:bg-gradient"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
